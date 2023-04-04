@@ -66,7 +66,6 @@ app.get("/scrape", async (req, res) => {
 
     res.status(200).json(data);
   } catch (error) {
-    console.log(error);
     return res
       .status(500)
       .send("Failed to retrieve HTML content from the URL.");
