@@ -29,7 +29,7 @@ app.get("/scrape", async (req, res) => {
     return res.status(400).send("Please provide a URL to scrape.");
   }
 
-  request(url, function (err, ressponse, body) {
+  request(url, function (err, _, body) {
     if (err) {
       return res
         .status(500)
